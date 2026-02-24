@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Camera Upload App</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    <!-- Favicon -->
+    <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/685/685655.png">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h2>
+            <i class="fa-solid fa-camera"></i>
+            Camera Upload App
+        </h2>
+
+        <video id="video" autoplay playsinline></video>
+
+        <div class="buttons">
+            <button onclick="startCamera()">
+                <i class="fa-solid fa-video"></i>
+                Start Camera
+            </button>
+
+            <button onclick="takePhoto()">
+                <i class="fa-solid fa-camera-retro"></i>
+                Let's see you
+            </button>
+
+           
+        </div>
+
+        <canvas id="canvas" width="300" height="225" style="display:none;"></canvas>
+
+        <h3>
+            <i class="fa-solid fa-image"></i>
+            your Image
+        </h3>
+
+        <img id="uploadedImage">
+        <p id="imageUrl"></p>
+
+    </div>
+    <div id="uploadOverlay" class="upload-overlay hidden">
+        <div class="upload-card">
+    
+            <div class="icon-container">
+                <div class="loader" id="loader"></div>
+                <div class="check" id="check">✓</div>
+            </div>
+    
+            <div class="upload-text" id="uploadText">
+                Saving photo...
+            </div>
+    
+        </div>
+    </div>
+    <!-- Toast Container -->
+    <div id="toastContainer" class="toast-container"></div>
+
+    <script src="app.js"></script>
+</body>
+
+</html>
