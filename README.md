@@ -179,7 +179,7 @@ This project is licensed under the MIT License.
 
 ## 👨‍💻 Author
 
-Developed with ❤️ by **Your Name**
+Developed with ❤️ by **Ruhollah Hosseini**
 
 GitHub: https://github.com/DDSCODE3
 
